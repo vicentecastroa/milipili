@@ -1,0 +1,91 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: url("../images/background.png") no-repeat center fixed;
+    background-size: cover;
+    background-color: #ebf7fc;
+    margin-bottom: 60px;
+}
+
+.logo{
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1, .h2, .h3, .h4, .p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.boton{
+    position: relative;
+}
+
+.texto-btn{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+}
+
+.tituloContenido{
+    padding-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+#mails {
+    padding: 25px;
+    padding-bottom: 40px;
+}
+
+.subtitulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nombre{
+    font-size: 16px;
+}
+
+.contenido {
+    max-height: 530px;
+    padding-bottom: 40px;
+}
+
+#somos {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.banner{
+    height: 200px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#wrapper{
+}
+
+.mapa {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
