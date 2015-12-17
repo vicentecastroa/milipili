@@ -16,22 +16,22 @@
 
 <body>
 <div class="container" id="wrapper">
-<div class="banner container">
+<div class="banner container" onclick="mostrarInicio()">
     <img class="img-responsive logo" src="images/logo.png" alt="Altos de Mili Pili">
 </div>
 
 <div class="row">
     <div class="col-md-3 col-md-offset-3 text-center">
         <div class="boton" onClick="cambiarContenido('somos')">
-            <img src="images/nube_01.png" alt="">
-            <h3 class="texto-btn">Quiénes Somos</h3>
+            <img src="images/nube_01_s.png" alt="">
+            <h3 class="texto-btn">Nosotras</h3>
         </div>
     </div>
 
     <div class="col-md-3 text-center">
-        <div class="boton" onClick="cambiarContenido('admision')">
-            <img src="images/nube_03.png" alt="">
-            <h3 class="texto-btn">Admision</h3>
+        <div class="boton" onClick="cambiarContenido('jornadas')">
+            <img src="images/nube_05_s.png" alt="">
+            <h3 class="texto-btn">Jornadas y Talleres</h3>
         </div>
 
     </div>
@@ -39,15 +39,15 @@
 
 <div class="row">
     <div class="col-md-3 text-center">
-        <div class="boton" onClick="cambiarContenido('contacto')">
-            <img src="images/nube_02.png" alt="">
-            <h3 class="texto-btn"> Contacto</h3>
+        <div class="boton" onClick="cambiarContenido('jardin')">
+            <img src="images/nube_02_s.png" alt="">
+            <h3 class="texto-btn"> El Jardín</h3>
         </div>
     </div>
     <div class="col-md-3 col-md-offset-6 text-center">
-        <div class="boton" onClick="cambiarContenido('matricula')">
-            <img src="images/nube_04.png" alt="">
-            <h3 class="texto-btn">Matricula</h3>
+        <div class="boton" onClick="cambiarContenido('contacto')">
+            <img src="images/nube_04_s.png" alt="">
+            <h3 class="texto-btn">Contacto</h3>
         </div>
 
     </div>
@@ -57,33 +57,28 @@
     <div class="col-md-8 col-md-offset-2 contenido">
 
         <!-- Contacto -->
-        <div id='contacto' class='text-center' style="display: none">
-            <h4 class="tituloContenido">Contacto</h4>
-            <p> Cualquier duda o consulta, escríbanos a contacto@altosdemilipili.cl</p>
-            <div class="row" id="mails">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <p class="subtitulo">Directora Educacional</p>
-                    <p class="nombre">Emilia Diez Zenteno</p>
-                    <p>pameladiez@altosdemilipili.cl</p>
+        <div id='contacto' style="display: none">
+            <div class="row">
+                <div class="col-md-6 sep-izq">
+                    <h4 class="tituloContenido">Ubicación</h4>
+                        <div class="row" style="margin:0 5px ">
+                            <div class="embed-responsive embed-responsive-16by9 mapa">
+                                <iframe class='embed-responsive-item'
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.424892896576!2d-70.53837758480235!3d-33.38607748079244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cead107bf6b1%3A0x2861c0f2c4ea2e04!2sCampanario+35%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1450137320236"
+                                        width="600" height="300" frameborder="0" style="border:0" allowfullscreen >
+                                </iframe>
+                            </div>
+                        </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <p class="subtitulo">Directora Administrativa</p>
-                    <p class="nombre">Pamela Diez Zenteno</p>
-                    <p>patriciazenteno@altosdemilipili.cl</p>
+                <div class="col-md-6">
+                    <h4 class="tituloContenido">Contacto</h4>
+                    <p class="cuerpoContenido"> Para más información:</p>
+                    <p> Puedes visitarnos en Campanario #35, Las Condes</p>
+                    <p> Puedes llamarnos a 228801348 | 97854035 | 89513696</p>
+                    <p> Puedes escribirnos a contacto@altosdemilipili.cl</p>
                 </div>
             </div>
 
-            <h4 class="tituloContenido">Ubicación</h4>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <div class="embed-responsive embed-responsive-16by9 mapa">
-                        <iframe class='embed-responsive-item'
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.424892896576!2d-70.53837758480235!3d-33.38607748079244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cead107bf6b1%3A0x2861c0f2c4ea2e04!2sCampanario+35%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1450137320236"
-                                width="600" height="300" frameborder="0" style="border:0" allowfullscreen >
-                        </iframe>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
@@ -91,24 +86,25 @@
 
         <!-- Quienes Somos -->
         <div id='somos' style="display: none">
-            <h4 class="tituloContenido">Quienes somos</h4>
+            <h4 class="tituloContenido">Nosotras</h4>
             <div class="row">
                 <div class="col-md-6">
-                    <p class="subtitulo">Misión</p>
-                    <p>La misión de Altos de Mili Pili es entregar a nuestros alumnos una formación sólida y de calidad
+                    <p id="nosotras-texto">Nuestro jardín infantil nace a partir de que hemos podido percibir
+                        la gran importancia que tiene
+                        para un niño los primeros años de vida. La educación preescolar es vital para el desarrollo,
+                        permite entrenar y desarrollar habilidades y destrezas que exige el currículo programático de
+                        la educación en general, principalmente en relación con el aprendizaje de la lectura, la
+                        escritura y el cálculo.
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <p id="mision">Misión</p>
+                    <p id="mision-texto">La misión de Altos de Mili Pili es entregar a nuestros alumnos una formación sólida y de calidad
                         favoreciendo un desarrollo integral, entregando todas las herramientas necesarias para lograr niños
                         autónomos, activos, creadores y protagonistas de su propio desarrollo personal mediante un ambiente
                         cálido y enriquecedor, respetando las características y personalidades de cada uno de ellos, con el
                         fin de potenciar sus habilidades y destrezas.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <p class="subtitulo"> Visión</p>
-                    <p>Altos de Mili Pili quiere lograr destacarse en el ámbito educacional como un jardín infantil que
-                        entregue las mejores herramientas para el crecimiento de cada niño de forma personalizada, mediante
-                        el cariño, la contención y la preocupación diaria de cada una de los miembros de nuestro jardín
-                        infantil, junto con eso queremos que nuestros padres se sientan con la máxima tranquilidad y seguridad
-                        que sus hijos están en las mejores manos.
                     </p>
                 </div>
             </div>
@@ -116,30 +112,74 @@
         </div>
 
         <!-- Admision -->
-        <div id='admision' style="display: none">
-            <h4 class="tituloContenido">Admisión</h4>
-            <p class="cuerpoContenido"></p>
+        <div id='jardin' style="display: none">
+            <h4 class="tituloContenido">El Jardín</h4>
+            <p class="cuerpoContenido">
+                Altos de Mili Pili quiere entregar las mejores herramientas para el crecimiento de cada niño de
+                forma personalizada, mediante el cariño, la contención y la preocupación diaria de cada una de los
+                miembros de nuestro jardín infantil, junto con eso queremos que nuestros padres se sientan con la
+                máxima tranquilidad y seguridad que sus hijos están en las mejores manos.
+            </p>
+            <p class="cuerpoContenido">Altos de mili pili se basa en una metodología integral la cual recoge e integra lo mejor de cada una.</p>
+            <p class="cuerpoContenido">Todo esto lo queremos hacer posible mediante un ambiente seguro y confortable, diseñado especialmente
+                para cada uno de nuestros alumnos contando con:
+            </p>
+            <div class="row" id="features">
+                <div class="col-md-6">
+                    <p>• Inglés</p>
+                    <p>• Sala de Psicomotricidad</p>
+                    <p>• Fonoaudiólogo</p>
+                    <p>• Talleres</p>
+                </div>
+                <div class="col-md-6">
+                    <p>• Huerto</p>
+                    <p>• Sistema de Cámaras</p>
+                    <p>• Superficie de 900 m2</p>
+                    <p>• Arriendo para eventos infantiles</p>
+                </div>
+            </div>
         </div>
         <!-- Matriculate -->
-        <div id='matricula' style="display: none">
-            <h4 class="tituloContenido">Matrícula</h4>
-            <p class="cuerpoContenido"></p>
+        <div id='jornadas' style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="tituloContenido">Jornadas</h4>
+                    <div><h4>Mañana: 08:00 AM hasta las 12:30 PM</h4></div>
+                    <div><h4>Extendida: 08:00 AM hasta las 15:30 PM</h4></div>
+                </div>
+                <div class="col-md-6 text-center con-separador">
+                    <h4 class="tituloContenido" >Talleres</h4>
+                    <div class="row taller-row">
+                        <div class="col-md-4 col-md-offset-1">
+                            <img class="img-responsive icon-taller" src="images/icon-ballet.png" alt="Ballet">
+                        </div>
+                        <div class="col-md-7"><p class="taller">Ballet</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-1">
+                            <img class="img-responsive icon-taller" src="images/icon-futbol.png" alt="Futbol">
+                        </div>
+                        <div class="col-md-7"><p class="taller">Fútbol</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-1">
+                            <img class="img-responsive icon-taller" src="images/chef.png" alt="Cocina">
+                        </div>
+                        <div class="col-md-7"><p class="taller">Cocina</p></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="bienvenida">
-            <h4 class="tituloContenido">Bienvenida</h4>
-            <img class="img-responsive" src="images/bienvenida.png" alt="" id="caligrama">
+            <h2 style="text-align: center; margin-top: 60px">Bienvenidos al Jardín Infantil Altos de Mili Pili</h2>
         </div>
     </div>
 </div>
 </div>
 <!--
-<footer class="footer navbar-fixed-bottom">
-    <div class="container text-center">
-    <p>Jardín Infantil Altos de Mili Pili | Dirección: Campanario #35, Las Condes | contacto@altosdemilipili.cl </p>
-    <p style="font-size: 8px">Desarrollado por Vicente Castro</p>
-    </div>
-</footer>
+Ballet Shoe by Joris Hoogendoorn from the Noun Project
+Soccer Ball by René Andritsch from the Noun Project
 -->
 
 
